@@ -25,13 +25,13 @@ import { setClipboardData, getClipboardData } from '@/js_sdk/uni-clipboard'
 
 - 参数：`text` `<string>` 需要设置的文本
 - 返回： `<Promise>`
-  -- `resolve` 设置成功
-  -- `reject` 设置失败
+  - `resolve` 设置成功
+  - `reject` 设置失败
 
 ### getClipboardData()
 
 获取剪贴板的内容
 
 - 返回： `<Promise>`
-  -- `resolve` 获取成功后的文本
-  -- `reject` 获取失败
+  - `resolve` 获取成功后的文本
+  - `reject` 获取失败
