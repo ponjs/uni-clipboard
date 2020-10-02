@@ -1,0 +1,16 @@
+{
+	"name": "uni-clipboard",
+	"version": "1.0.0",
+	"description": "剪贴板操作插件，全平台兼容，支持设置剪贴板的内容和获取剪贴板的内容",
+	"main": "index.js",
+	"keywords": [
+		"uni-app",
+		"clipboard"
+	],
+	"author": "ponjs",
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ponjs/uni-clipboard"
+	}
+}
