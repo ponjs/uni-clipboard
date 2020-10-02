@@ -14,7 +14,7 @@ import { setClipboardData, getClipboardData } from 'uni-clipboard'
 
 ```Javascript
 // 以下路径需根据项目实际情况
-import { setClipboardData, getClipboardData } from '@/js_sdk/uni-clipboard'
+import { setClipboardData, getClipboardData } from '@/js_sdk/u-clipboard'
 ```
 
 ## API
