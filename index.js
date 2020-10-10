@@ -10,7 +10,16 @@ export function setClipboardData(data) {
 		// #endif
 
 		// #ifdef H5
-		navigator.clipboard.writeText(data).then(success).catch(fail);
+		// navigator.clipboard.writeText(data).then(success).catch(fail);
+		const textarea = document.createElement('textarea');
+		textarea.value = data;
+		textarea.readOnly = 'readOnly';
+		document.body.appendChild(textarea);
+		textarea.select();
+		textarea.setSelectionRange(0, data.length);
+		document.execCommand('copy');
+		textarea.remove();
+		success(data);
 		// #endif
 	});
 }
