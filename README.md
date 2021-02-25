@@ -1,23 +1,20 @@
-# UNIAPP 剪贴板
+# 剪贴板
+
+## ✨ Feature
 
 剪贴板操作插件，全平台兼容，支持设置剪贴板的内容和获取剪贴板的内容
 
-## Import
-
-### npm
+## 🥗 Import
 
 ```Javascript
+// NPM
 import { setClipboardData, getClipboardData } from 'uni-clipboard'
+
+// DCloud
+import { setClipboardData, getClipboardData } from '@/uni_modules/u-clipboard/js_sdk'
 ```
 
-### download
-
-```Javascript
-// 以下路径需根据项目实际情况
-import { setClipboardData, getClipboardData } from '@/js_sdk/u-clipboard'
-```
-
-## API
+## 🥪 API
 
 ### setClipboardData(text)
 
@@ -25,7 +22,7 @@ import { setClipboardData, getClipboardData } from '@/js_sdk/u-clipboard'
 
 - 参数：`text` `<string>` 需要设置的文本
 - 返回： `<Promise>`
-  - `resolve` 设置成功
+  - `resolve` 设置的文本
   - `reject` 设置失败
 
 ### getClipboardData()
