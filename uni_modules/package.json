@@ -1,7 +1,7 @@
 {
   "id": "u-clipboard",
   "displayName": "剪贴板",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "剪贴板操作插件，全平台兼容，支持设置剪贴板的内容和获取剪贴板的内容",
   "keywords": [
     "uni-app",
