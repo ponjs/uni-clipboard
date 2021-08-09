@@ -34,14 +34,21 @@ export function setClipboardData(data) {
 
     // #ifdef H5
     const textarea = document.createElement('textarea')
-    textarea.value = data
-    textarea.readOnly = true
-    document.body.appendChild(textarea)
-    textarea.select()
-    textarea.setSelectionRange(0, data.length)
-    document.execCommand('copy')
-    textarea.remove()
-    success(data)
+    try {
+      textarea.value = data
+      textarea.readOnly = true
+      textarea.style.position = 'absolute'
+      textarea.style.left = '-100%'
+      document.body.appendChild(textarea)
+      textarea.select()
+      textarea.setSelectionRange(0, textarea.value.length)
+      document.execCommand('copy')
+      textarea.remove()
+      success(data)
+    } catch (error) {
+      textarea.remove()
+      fail(data)
+    }
     // #endif
   })
 }
