@@ -1,11 +1,13 @@
 {
   "id": "u-clipboard",
   "displayName": "剪贴板",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "剪贴板操作插件，全平台兼容，支持设置剪贴板的内容和获取剪贴板的内容",
   "keywords": [
-    "uni-app",
-    "clipboard"
+    "clipboard",
+    "复制",
+    "粘贴",
+    "剪切"
   ],
   "repository": "https://github.com/ponjs/uni-clipboard",
   "dcloudext": {
@@ -18,7 +20,18 @@
       "data": "插件不采集任何数据",
       "permissions": "无"
     },
-    "npmurl": "https://www.npmjs.com/package/uni-clipboard"
+    "npmurl": "https://www.npmjs.com/package/uni-clipboard",
+    "sale": {
+      "regular": {
+        "price": "0.00"
+      },
+      "sourcecode": {
+        "price": "0.00"
+      }
+    },
+    "contact": {
+      "qq": ""
+    }
   },
   "uni_modules": {
     "platforms": {
